@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+    background-color: hsl(233, 47%, 7%);
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(244, 38%, 16%);
+    width: 1080px;
+    border-radius: 10px;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Legend Deca', sans-serif;
+}
+.container-main{
+    margin: 55px 0px 55px 55px;
+}
+.container-main__titre__p{
+    margin-bottom: 70px;
+}
+.container-main__titre__p h1{
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+.container-main__titre__p p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    font-size: 14px;
+}
+.container-main__titre__p span{
+    color: hsl(277, 64%, 61%);
+}
+.container-main__numbers{
+    display: flex;
+}
+.container-main__numbers h1{
+    font-size: 21px;
+}
+.container-main__numbers p{
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.container-main__numbers__left, .container-main__middle{
+    margin-right: 60px;
+}
+.container-main__img{
+    display: flex;
+    background-color: hsl(277, 94%, 41%);
+    border-radius: 0px 5px 5px 0px;
+}
+.container-main__img__desktop{
+    background-image: url(../img/image-header-desktop.jpg);
+    opacity: 0.5;
+    width: 540px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 5px 5px 0px;
+}
+.container-main__img__mobile{
+    background-image: url(../img/image-header-mobile.jpg);
+}
+
+@media screen and (max-width: 1000px) {
+
+    section{
+        flex-direction: column-reverse;
+        width: auto;
+    }
+    .container-main{
+        margin: 35px;
+        text-align: center;
+    }
+    .container-main__img__desktop{
+        display: none;    
+    }
+    .container-main__img__mobile{
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px 5px 0px 0px;
+        opacity: 0.5;
+    }
+    .container-main__img{
+        border-radius: 5px 5px 0px 0px;
+    }
+    .container-main__numbers{
+        flex-direction: column;
+    }
+    .container-main__numbers .all{
+        margin: 15px 0px; 
+    }
+    .container-main__titre__p{
+        margin-bottom: 40px;
+    }
+    .container-main__bas p{
+        margin-top: 7px;
+    }
+}
